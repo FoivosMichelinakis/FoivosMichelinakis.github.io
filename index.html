@@ -1,1 +1,361 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Foivos Michelinakis' personal page</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!--extra academic icons to font awesome: https://jpswalsh.github.io/academicons/ -->
+  <link rel="stylesheet" href="css/academicons-1.8.6/css/academicons.min.css"/>
+  
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+  <!--small script to check the answers to the quiz-->>
+  <script>
+      function check_answers()
+      {
+      var q1=document.getElementsByName("question1");
+      var q2=document.getElementsByName("question2");
+      var q3=document.getElementsByName("question3");
+      
+      var checked1 = false;
+      var checked2 = false;
+      var checked3 = false;
+      
+      var qu1 = "";
+      var qu2 = "";
+      var qu3 = "";
+      
+      
+       for (var x = 0; x < q1.length; x ++) {
+              if (q1[x].checked) {
+            checked1=true;
+            qu1 = "1" + x.toString();
+            break;
+              }
+            }
+          
+       for (var x = 0; x < q2.length; x ++) {
+              if (q2[x].checked) {
+                checked2=true;
+            qu2 = "2" + x.toString();
+            break;
+              }
+            }
+          
+       for (var x = 0; x < q3.length; x ++) {
+              if (q3[x].checked) {
+                checked3=true;
+            qu3 = "3" + x.toString();
+            break;
+              }
+            }
+      
+      
+      
+      
+          
+      
+      if (checked1 && checked2 && checked3)
+      {
+        document.getElementById("12").innerHTML = " &#10004 correct!!! &#9786";
+        document.getElementById("21").innerHTML = " &#10004 correct!!! &#9786";
+        document.getElementById("33").innerHTML = " &#10004 correct!!! &#9786";
+      
+        document.getElementById("answer1").innerHTML = "<br/><h3>Answer 1</h3><br/>The logo (Seal) of NTUA is the mythological figure Prometheus, carrying fire. According to Greek Mythology, Prometheus stole fire (which symbolizes knowldege) from the Gods and gave it to the mortals. <br/>Goddess Athena, the ancient Greek Goddess of wisdom, is the logo of National and Kapodistrian University of Athens. <br/> Saint Dimitrios is the logo of the Aristotle University of Thessaloniki. It is not clear why Saint Dimitrios was chosen for the logo, since the university is named after the Greek philosopher and polymath Aristotle. One possible explanation is that he is the protector saint of Thessaloniki, the city where the university is located.<br/>Finally, Saint Andreas (carrying a cross), the protector saint of the city of Patras, is the logo University of Patras.<br/>All the above universities are located in Greece.";
+        document.getElementById("answer2").innerHTML = "<br/><h3>Answer 2</h3><br/>The moto of Research and Informatics Corps <a href='http://www.army.gr/default.php?pname=PERIGRAFI_EMBLIMATOS_EREVNASPLIROFORIKIS&la=1'>(see emblem here)</a> of the Greek Army is 'Seek for the Optimal'. It is derived by a quote of the ancient Greek rhetorician Isokrates. The full quote is 'Στέργε μέν τά παρόντα, ζήτει δέ τά βελτίω' (Try to maintain what you have already achieved. Seek though for the optimal).<br/>'Power through Knowledge' is the moto of the Artillery Arm <a href='http://www.army.gr/default.php?pname=PERIGRAFI_EMBLIMATOS_PYROVOLIKOU&la=1'>(see emblem here).</a><br/>'Forever, The Great God applies geometry' is the moto of the Geography Corps <a href='http://www.army.gr/default.php?pname=PERIGRAFI_EMBLIMATOS_GEOGRAFIKOU&la=1'>(see emblem here).</a> <a href='http://en.wikipedia.org/wiki/Piphilology#Katharevousa_.28archaizing.29_Greek'>It is a Greek mnemonic for the first numbers of Pi (π)</a>.<br/>'Along with the words, Actions' is the moto of the Engineers Arm <a href='http://www.army.gr/default.php?pname=PERIGRAFI_EMBLIMATOS_MHXANIKOU&la=1'>(see emblem here).</a> ";
+        document.getElementById("answer3").innerHTML = "<br/><h3>Answer 3</h3><br/>The aim of IMDEA is to set up advanced research centers and higher education and training in the Community of Madrid. There are currently eight institutes. The complete list of all the IMDEA Institutes can be found <a href='http://www.imdea.org/en/IMDEA/tabid/151/Default.aspx'>here.</a>";
+        
+      document.getElementById("frame").innerHTML = "<iframe width = '0' height = '0' src='quizval.html'></iframe>"; 
+        
+        
+      if  (q1[0].checked)
+      {
+      document.getElementById("11").innerHTML = " &#10008;  wrong  &#9785";
+      }
+      
+      if  (q1[2].checked)
+      {
+      document.getElementById("13").innerHTML = " &#10008;  wrong  &#9785";
+      }
+      
+      if  (q1[3].checked)
+      {
+      document.getElementById("14").innerHTML = " &#10008;  wrong  &#9785";
+      }
+      
+      if  (q2[1].checked)
+      {
+      document.getElementById("22").innerHTML = " &#10008;  wrong  &#9785";
+      }
+      
+      if  (q2[2].checked)
+      {
+      document.getElementById("23").innerHTML = " &#10008;  wrong  &#9785";
+      }
+      
+      if  (q2[3].checked)
+      {
+      document.getElementById("24").innerHTML = " &#10008;  wrong  &#9785";
+      }
+      
+      if  (q3[0].checked)
+      {
+      document.getElementById("31").innerHTML = " &#10008;  wrong  &#9785";
+      }
+      
+      if  (q3[1].checked)
+      {
+      document.getElementById("32").innerHTML = " &#10008;  wrong  &#9785";
+      }
+      
+      if  (q3[3].checked)
+      {
+      document.getElementById("34").innerHTML = " &#10008;  wrong  &#9785";
+      }  
+        }
+      else
+      {alert("You have to select an answer for all the questions!");}
+        
+      }
+      </script>
+
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Foivos Ioannis Michelinakis</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpeg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience (recent)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#quiz">Quiz</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Foivos
+          <span class="text-primary">Michelinakis</span>
+        </h1>
+        <div class="subheading mb-5">Oslo, Norway · 
+          <!--<a href="mailto:name@email.com">michelinakis.foivos [at] gmail.com</a> -->
+          michelinakis.foivos [at] gmail.com
+        </div>
+        <p class="lead mb-5"> I am a Communications Engineer specializing in wireless communication systems measurements.
+          Since 2018, I am a postdoctoral fellow at <a href="https://www.simula.no/research/projects/simula-metropolitan-center-digital-engineering">Simula Metropolitan,</a> working on 5G / NB-IoT technologies.
+          During my PhD at <a href="https://www.networks.imdea.org">IMDEA Networks Institute</a> and <a href="https://www.uc3m.es/home">University Carlos III of Madrid</a>,
+          I worked on <a href="http://eprints.networks.imdea.org/id/document/4674">optimizing the delivery of multimedia over mobile networks,</a> under the supervision of <a href="http://www.joergwidmer.org">Dr. Joerg Widmer.</a>
+          My research interests include "Mobile Networks", "Network Optimization" and "Content Distribution Networks".
+          <br/>
+          <br/>
+          I prefer working on real equipment rather than doing simulations / models. Currently, I work IoT devices, as well as <a href="https://www.5g-vinni.eu/norway-main-facility-site/">industrial</a> and academic 5G testbeds.
+          <br/>
+          My current project is <a href="https://www.5g-vinni.eu">5G-VINNI</a>. My past projects include <a href="https://www.networks.imdea.org/research/projects/concluded/ecousin">eCOUSIN</a>
+          and <a href="https://www.monroe-project.eu">MONROE.</a>
+          <br/> 
+          Most of my publications can be found in PDF format at <a href="http://people.networks.imdea.org/~foivos_michelinakis/publications.html">the repository of IMDEA.</a>
+          For more details have a look at my <a href="pdf/resume_Foivos_Michelinakis_2019_08.pdf">resume</a> or <a href="pdf/academic_CV_Foivos_Michelinakis_2019_08.pdf">CV.</a>
+          </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/foivosmichelinakis/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/FoivosMichelinakis">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://scholar.google.no/citations?user=35Nq404AAAAJ&hl=no&oi=ao">
+            <i class="ai ai-google-scholar"></i>
+          </a>
+        <!-- all the available social icons are listed in the fontawesome.css file.-->
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience (recent)</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Postdoctoral Fellow</h3>
+            <div class="subheading mb-3">Simula Metropolitan Center for Digital Engineering (SimulaMet)</div>
+            <p>5G / NB-IoT experimentation, analytics and KPI verification. Participation in the European project 5G-VINNI.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">10/2018 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">PhD Intern</h3>
+            <div class="subheading mb-3">Simula Research Laboratory</div>
+            <p>Asses the performance of domains hosted in Cloud Service Providers (CSP), over mobile networks.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">12/2017 - 02/2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Research assistant</h3>
+            <div class="subheading mb-3">IMDEA Networks Institute</div>
+            <p>Participation in the FP7 Framework programs ''eCOUSIN'' and ''MONROE''.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">10/2012 - 09/2017</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">Visiting PhD student</h3>
+              <div class="subheading mb-3">Korea Advanced Institute of Science and Technology - KAIST</div>
+              <p>Group project: develop an application that monitors the context of a mobile phone in order to minimize unnecessary radio operations.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">1/2017 - 7/2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="resume-content">
+                <h3 class="mb-0">PhD Intern</h3>
+                <div class="subheading mb-3">Spotify</div>
+                <p>Development of a passive mobile bandwidth classification tool.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">9/2014 - 11/2014</span>
+              </div>
+            </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="publications">
+      <div class="w-100">
+        <h2 class="mb-5">Publications</h2>
+          <p><a href="https://scholar.google.no/citations?user=35Nq404AAAAJ&hl=no&oi=ao">Please refer to Google Scholar.</a></p>
+      </div>
+
+    </section>
+
+
+    
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="quiz">
+      <div class="w-100">
+        <h2 class="mb-5">Quiz</h2>
+
+        <P align="justify">
+            <!-- start -->
+            
+            
+            <p>Hopefully you have already been through my <a href="pdf/academic_CV_Foivos_Michelinakis_2019_08.pdf">Curriculum vitae</a>.
+            So, here is a quiz related my past education / work places!</p>
+            <h3>Question 1</h3>
+            <p>What is the Logo of National Technical University of Athens (NTUA)?</p>
+            
+            <form>
+            <input type="radio" name="question1" value="11">Godess Athena<span id="11" style = "color:red"></span><br/>
+            <input type="radio" name="question1" value="12">Prometheus<span id="12" style = "color:green"></span><br/>
+            <input type="radio" name="question1" value="13">Saint Dimitrios<span id="13" style = "color:red"></span><br/>
+            <input type="radio" name="question1" value="14">Saint Andreas<span id="14" style = "color:red"></span>
+            
+            <div id="answer1">
+            </div>
+            <br />
+            <h3>Question 2</h3>
+            <p>What is the moto of Research and Informatics Corps of the Greek Army?</p>
+            
+            
+            <input type="radio" name="question2" value="21">Seek for the Optimal (ΖΗΤΕΙ ΤΑ ΒΕΛΤΙΩ)<span id="21" style = "color:green"></span><br/>
+            <input type="radio" name="question2" value="22">Power through Knowledge (ΙΣΧΥΣ ΔΙΑ ΤΗΣ ΓΝΩΣΕΩΣ)<span id="22" style = "color:red"></span><br/>
+            <input type="radio" name="question2" value="23">Forever, The Great God applies geometry (ΑΕΙ Ο ΘΕΟΣ Ο ΜΕΓΑΣ ΓΕΩΜΕΤΡΕΙ)<span id="23" style = "color:red"></span><br/>
+            <input type="radio" name="question2" value="24">Along with the words, Actions (ΑΜ' ΕΠΟΣ ΑΜ' ΕΡΓΟΝ)<span id="24" style = "color:red"></span>
+            
+            <div id="answer2">
+            </div>
+            <br />
+            <h3>Question 3</h3>
+            <p>Apart from IMDEA Networks, another IMDEA institute is:</p>
+            
+            
+            <input type="radio" name="question3" value="31">Applied Physics<span id="31" style = "color:red"></span><br/>
+            <input type="radio" name="question3" value="32">Mathematics<span id="32" style = "color:red"></span><br/>
+            <input type="radio" name="question3" value="33">Social Sciences<span id="33" style = "color:green"></span><br/>
+            <input type="radio" name="question3" value="34">Bioinformatics<span id="34" style = "color:red"></span>
+            <div id="answer3">
+            </div>
+            <br/><br/>
+            </form>
+            
+            <button class="but" type="button" onclick="return check_answers()">check answers</button>
+            <div id="frame">
+            </div>
+            <!-- end -->
+            </p> 
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
